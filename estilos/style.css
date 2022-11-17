@@ -1,1 +1,45 @@
 @charset "UTF-8";
+
+body{
+    background-color: black;
+}
+
+
+
+.container{
+    border: 1px solid rgb(255, 0, 0);
+    height: 100%;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.app{
+    border: 2px solid rgba(215, 215, 215, 0.412);
+    border-radius: 10px;
+
+
+    height: 400px;
+   
+    padding: 50px;
+    padding-top: 10px;
+   
+    margin-top: 5px;
+    
+    background-color: #24282b;
+}
+
+textarea{
+    width: 100%;
+    resize: vertical;
+    border: none;
+    padding: 10px;
+    overflow: hidden;
+    height: 80px;
+    outline: none;
+    font-weight: 600;
+    font-family: sans-serif;
+    font-size: 20px;
+}

@@ -1,13 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gerador de Memes</title>
-    <link rel="stylesheet" href="estilos/style.css">
+    <title>Máquina de MEMES</title>
+    <link rel="stylesheet" href="./estilos/reset.css">
+    <link rel="stylesheet" href="./estilos/style.css">
 </head>
+
 <body>
-    
+
+    <div class="container">
+
+        <div class="app">
+
+            <div class="logo">
+                <img src="imagens/logo-google-256.png" alt="Logo da dio">
+            </div>
+
+            <div class="app-imagem">
+                
+                <textarea name="" aria-multiline="true"  class="text-box" placeholder="Digite aqui seu meme">
+                </textarea>
+
+                <div id="dispay-image"></div>
+
+                <textarea name="" aria-multiline="true" placeholder="Digite aqui seu meme" class="text-box">
+                </textarea>
+
+            </div>
+
+            <div class="app-foto-picker">
+                <select id="memelist">
+                    <option value="1">ola</option>
+                </select>
+
+                <input 
+                    type="file" 
+                    id="image-input"
+                    accept="image/jpg, image/png">
+
+            </div>
+
+            <div class="download">
+
+            </div>
+
+        </div>
+
+    </div>
+
 </body>
+
 </html>
