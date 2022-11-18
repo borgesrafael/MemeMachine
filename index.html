@@ -17,10 +17,10 @@
         <div class="app">
 
             <div class="logo">
-                <img src="imagens/logo-google-256.png" alt="Logo da dio">
+                <img src="imagens/logo.png" alt="Logo da dio">
             </div>
 
-            <div class="app-image">
+            <div class="app-image" id="downlobled">
                 
                 <textarea name="" aria-multiline="true"  class="text-box" placeholder="Digite aqui seu meme">
                 </textarea>
@@ -33,9 +33,7 @@
             </div>
 
             <div class="app-photo-picker">
-                <select id="memelist">
-                    <option value="1">ola</option>
-                </select>
+                <select id="memelist" onchange="changeNamePicture(this.value)"></select>
 
                 <input 
                     type="file" 
@@ -51,7 +49,25 @@
         </div>
 
     </div>
+<script src="JavaScript/scripts.js"></script>
+<script src="JavaScript/html2canvas.js"></script>
+<script>
 
+    document.getElementById("btn-download").onclick = () =>{
+       const screenshotPrint = document.querySelector("#downlobled")
+
+       html2canvas(screenshotPrint).then((canvas)=>{
+        const base64Image = canvas.toDataURL("image/png")
+        let anchor = document.createElement("a")
+        anchor.setAttribute("href", base64Image)
+        anchor.setAttribute("download", "my-meme.png")
+        anchor.click()
+        anchor.remove()
+       })
+    }
+    
+
+</script>
 </body>
 
 </html>
