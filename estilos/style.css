@@ -10,6 +10,10 @@ body{
     justify-content: center;
     padding-top: 10px;
     padding-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-size: 50PX;
+    color: rgba(255, 255, 255, 0.432);
 }
 
 .app-image{
@@ -78,6 +82,7 @@ textarea{
     font-weight: bolder;
     padding: 10px;
     background-color: orange;
+    border-radius: 5PX;
 }
 
 .text-box{
