@@ -31,6 +31,10 @@ async function mapImageList(){
             "name": "funny-cat2",
             "path": "imagens/funny-cat2.png"
         },
+        {
+            "name": "face1",
+            "path": "imagens/face1.jpg"
+        },
     ]
     return memesObject
 }
